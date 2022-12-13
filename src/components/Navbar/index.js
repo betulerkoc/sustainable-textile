@@ -6,6 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
@@ -25,9 +26,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link className="flex items-center" to="/about">
           About
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -35,9 +36,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link className="flex items-center" to="/campaigns">
           Campaigns
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -45,9 +46,9 @@ export default function Example() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link className="flex items-center" to="/tips">
           Tips
-        </a>
+        </Link>
       </Typography>
     </ul>
   );
