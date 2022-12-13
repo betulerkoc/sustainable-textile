@@ -50,6 +50,16 @@ export default function Example() {
           Tips
         </Link>
       </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal"
+      >
+        <Link className="flex items-center" to="/new">
+          Add Product
+        </Link>
+      </Typography>
     </ul>
   );
 
@@ -88,7 +98,9 @@ export default function Example() {
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-          <span>Login</span>
+          <Link className="flex items-center" to="/login">
+            Login
+          </Link>
         </Button>
         <IconButton
           variant="text"
@@ -131,7 +143,9 @@ export default function Example() {
       <MobileNav open={openNav}>
         {navList}
         <Button variant="gradient" size="sm" fullWidth className="mb-2">
-          <span>Login</span>
+          <Link className="flex items-center" to="/login">
+            Login
+          </Link>
         </Button>
       </MobileNav>
     </Navbar>
