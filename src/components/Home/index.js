@@ -52,24 +52,21 @@ export default function Home() {
       </div>
       <div className="bg-pink-900 h-96 w-screen"></div>
 
-      <div className="flex flex-wrap justify-around p-10">
+      <div className="flex flex-wrap justify-around py-10">
         <InstagramEmbed
           url="https://www.instagram.com/p/CRV7Awarg1M/"
           captioned
-          width={325}
-          height={570}
+          className="w-auto h-full mr-10"
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CMjUgx8raqC/"
           captioned
-          width={325}
-          height={570}
+          className="w-auto h-full mr-10"
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CMrXRMmL2Es/"
           captioned
-          width={325}
-          height={570}
+          className="w-auto h-full mr-10"
         />
       </div>
     </>
