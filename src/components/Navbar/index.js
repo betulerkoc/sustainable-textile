@@ -109,7 +109,7 @@ export default function Example() {
           </Link>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block">
+        <Button size="sm" className="hidden lg:inline-block bg-black">
           <Link className="flex items-center" to="/login">
             Login
           </Link>
@@ -154,7 +154,7 @@ export default function Example() {
       </div>
       <MobileNav open={openNav}>
         {navList}
-        <Button variant="gradient" size="sm" fullWidth className="mb-2">
+        <Button size="sm" fullWidth className="mb-2 bg-black">
           <Link className="flex items-center" to="/login">
             Login
           </Link>
