@@ -56,17 +56,20 @@ export default function Home() {
         <InstagramEmbed
           url="https://www.instagram.com/p/CRV7Awarg1M/"
           captioned
-          className="w-auto h-full mr-10"
+          width={325}
+          height={570}
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CMjUgx8raqC/"
           captioned
-          className="w-auto h-full mr-10"
+          width={325}
+          height={570}
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CMrXRMmL2Es/"
           captioned
-          className="w-auto h-full mr-10"
+          width={325}
+          height={570}
         />
       </div>
     </>
