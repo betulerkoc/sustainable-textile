@@ -1,20 +1,11 @@
-import Background from "../../Background.jpg";
 import { InstagramEmbed } from "react-social-media-embed";
 
 export default function Home() {
   return (
     <>
-      <div className="relative text-center">
-        <img className="w-screen h-fit mt-5" src={Background} alt="qr" />
-        <p className="absolute left-5 bottom-5 text-2xl xl:text-7xl text-gray-400">
-          Sustainable product
-        </p>
-      </div>
-      <div className="bg-amber-800 w-screen h-96">
-        <div className="text-gray-200 m-auto w-1/2">
-          <p className="py-20 text-2xl xl:text-4xl">OUR MISSION</p>
-          <p className="text-lg xl:text-2xl">...</p>
-        </div>
+      <div className="bg-black w-screen h-96 mt-10 flex flex-col items-center justify-evenly">
+        <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">It takes 2,700 liters of water to make the average cotton t-shirt. </p>
+        <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">That’s enough drinking water for one person for 900 days </p>
       </div>
       <div className="flex overflow-x-auto no-scrollbar py-10">
         <iframe
@@ -50,23 +41,23 @@ export default function Home() {
           allowfullscreen
         ></iframe>
       </div>
-      <div className="bg-pink-900 h-96 w-screen"></div>
+      <div className="bg-blue-100 h-96 w-screen"></div>
 
       <div className="flex flex-wrap justify-around py-10">
         <InstagramEmbed
           url="https://www.instagram.com/p/CRV7Awarg1M/"
           captioned
-          className="w-auto h-full mr-10"
+          className="w-auto h-auto mr-10 mt-3"
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CMjUgx8raqC/"
           captioned
-          className="w-auto h-full mr-10"
+          className="w-auto h-auto mr-10 mt-3"
         />
         <InstagramEmbed
           url="https://www.instagram.com/p/CMrXRMmL2Es/"
           captioned
-          className="w-auto h-full mr-10"
+          className="w-auto h-auto mr-10 mt-3"
         />
       </div>
     </>

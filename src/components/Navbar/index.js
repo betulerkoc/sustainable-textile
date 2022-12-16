@@ -18,61 +18,6 @@ export default function Example() {
     );
   }, []);
 
-  const navList = (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link className="flex items-center" to="/about">
-          About
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link className="flex items-center" to="/campaigns">
-          Campaigns
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link className="flex items-center" to="/tips">
-          Tips
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link className="flex items-center" to="/new">
-          Add Product
-        </Link>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link className="flex items-center" to="/all">
-          See All
-        </Link>
-      </Typography>
-    </ul>
-  );
-
   return (
     <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
@@ -108,7 +53,6 @@ export default function Example() {
             </svg>
           </Link>
         </Typography>
-        <div className="hidden lg:block">{navList}</div>
         <Button size="sm" className="hidden lg:inline-block bg-black">
           <Link className="flex items-center" to="/login">
             Login
@@ -153,7 +97,6 @@ export default function Example() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        {navList}
         <Button size="sm" fullWidth className="mb-2 bg-black">
           <Link className="flex items-center" to="/login">
             Login

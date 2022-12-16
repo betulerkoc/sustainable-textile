@@ -10,3 +10,12 @@
    -ms-overflow-style: none;  /* IE and Edge */
    scrollbar-width: none;  /* Firefox */
 }
+
+@layer base {
+    html {
+        font-family: monospace;
+    }
+    body{
+        background-color: ghostwhite;
+    }
+}
