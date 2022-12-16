@@ -1,11 +1,17 @@
 import { InstagramEmbed } from "react-social-media-embed";
+import  Cotton  from "../../Cotton.png";
 
 export default function Home() {
   return (
     <>
       <div className="bg-black w-screen h-96 mt-10 flex flex-col items-center justify-evenly">
-        <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">It takes 2,700 liters of water to make the average cotton t-shirt. </p>
-        <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">That’s enough drinking water for one person for 900 days </p>
+        <img className="w-20 h-20 xl:w-48 xl:h-48" src={Cotton} alt="qr" />
+        <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">
+          It takes 2,700 liters of water to make the average cotton t-shirt.{" "}
+        </p>
+        <p className="text-white text-2xl md:text-3xl xl:text-4xl text-center px-2">
+          That’s enough drinking water for one person for 900 days{" "}
+        </p>
       </div>
       <div className="flex overflow-x-auto no-scrollbar py-10">
         <iframe
