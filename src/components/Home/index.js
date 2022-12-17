@@ -1,4 +1,3 @@
-import { InstagramEmbed } from "react-social-media-embed";
 import  Cotton  from "../../Cotton.png";
 
 export default function Home() {
@@ -20,36 +19,36 @@ export default function Home() {
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <iframe
           className="w-full h-56 mr-5"
           src="https://www.youtube.com/embed/ZJJccLEGfHo"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <iframe
           className="w-full h-56 mr-5"
           src="https://www.youtube.com/embed/zhfAsnONwdE"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
         <iframe
           className="w-full h-56"
           src="https://www.youtube.com/embed/T_LQBakvEgo"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className="bg-blue-100 h-96 w-screen"></div>
 
-      <div className="flex flex-wrap justify-around py-10">
+      {/* <div className="flex flex-wrap justify-around py-10">
         <InstagramEmbed
           url="https://www.instagram.com/p/CRV7Awarg1M/"
           captioned
@@ -65,7 +64,7 @@ export default function Home() {
           captioned
           className="w-auto h-auto mr-10 mt-3"
         />
-      </div>
+      </div> */}
     </>
   );
 }
