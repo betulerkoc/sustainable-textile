@@ -52,7 +52,16 @@ export default function Example() {
             </svg>
           </Link>
         </Typography>
-        <Button size="sm" onClick={() => window.gtag('event','login_web')} className="hidden lg:inline-block bg-black">
+        <Button
+          size="sm"
+          onClick={() =>
+            window.gtag("event", "login", {
+              event_category: "user",
+              event_label: "login_w",
+            })
+          }
+          className="hidden lg:inline-block bg-black"
+        >
           Login
         </Button>
         <IconButton
@@ -94,7 +103,16 @@ export default function Example() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        <Button size="sm" onClick={() => window.gtag('event','login_mb')} className="mb-2 bg-black">
+        <Button
+          size="sm"
+          onClick={() =>
+            window.gtag("event", "login", {
+              event_category: "user",
+              event_label: "login_m",
+            })
+          }
+          className="mb-2 bg-black"
+        >
           Login
         </Button>
       </MobileNav>
