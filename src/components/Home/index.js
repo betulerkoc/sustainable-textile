@@ -1,15 +1,6 @@
 import Cotton from "../../Cotton.png";
 import Cloth from "../../Cloth.png";
 import { Button } from "@material-tailwind/react";
-import ReactGA from "react-ga";
-
-const GAevent = (categoryName, eventName) => {
-  ReactGA.event({       
-      category: categoryName,
-      action: eventName, 
-      label: 'labelName',        
-  });   
-}
 
 export default function Home() {
   return (
@@ -37,7 +28,7 @@ export default function Home() {
             Every second somewhere in the world a truckload of textiles is
             landfilled or incinerated
           </p>
-          <Button className="my-10 bg-black text-base" onClick={() => GAevent('Home','See Detail')}>Detail</Button>
+          <Button className="my-10 bg-black text-base" onClick={() => window.gtag('Home','See Detail')}>Detail</Button>
         </div>
       </div>
       <div className="flex overflow-x-auto no-scrollbar py-10">
