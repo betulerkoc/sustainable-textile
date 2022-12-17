@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_GOOGLE_ANALYTICS_ID);
+    ReactGA.initialize('G-F3B1PE2EMJ');
     ReactGA.pageview(window.location.pathname);
   }, []);
 
