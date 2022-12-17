@@ -1,4 +1,4 @@
-import  Cotton  from "../../Cotton.png";
+import Cotton from "../../Cotton.png";
 
 export default function Home() {
   return (
@@ -15,12 +15,22 @@ export default function Home() {
       <div className="flex overflow-x-auto no-scrollbar py-10">
         <iframe
           className="w-full h-56 mr-5"
-          src="https://www.youtube.com/embed/7OjazCbl588"
+          src="https://www.youtube.com/embed/HpxYfVUaTH8"
           title="YouTube video player"
-          frameBorder="0"
+          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
+
+        <iframe
+          className="w-full h-56 mr-5"
+          src="https://www.youtube.com/embed/eTHsMtcpg_Q"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
         <iframe
           className="w-full h-56 mr-5"
           src="https://www.youtube.com/embed/ZJJccLEGfHo"
@@ -29,6 +39,16 @@ export default function Home() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
+
+        <iframe
+          className="w-full h-56 mr-5"
+          src="https://www.youtube.com/embed/tLfNUD0-8ts"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+
         <iframe
           className="w-full h-56 mr-5"
           src="https://www.youtube.com/embed/zhfAsnONwdE"
