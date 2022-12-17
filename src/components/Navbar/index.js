@@ -52,10 +52,8 @@ export default function Example() {
             </svg>
           </Link>
         </Typography>
-        <Button size="sm" className="hidden lg:inline-block bg-black">
-          <Link className="flex items-center" to="/login">
-            Login
-          </Link>
+        <Button size="sm" onClick={() => window.gtag('event','login_web')} className="hidden lg:inline-block bg-black">
+          Login
         </Button>
         <IconButton
           variant="text"
@@ -96,10 +94,8 @@ export default function Example() {
         </IconButton>
       </div>
       <MobileNav open={openNav}>
-        <Button size="sm" fullWidth className="mb-2 bg-black">
-          <Link className="flex items-center" to="/login">
-            Login
-          </Link>
+        <Button size="sm" onClick={() => window.gtag('event','login_mb')} className="mb-2 bg-black">
+          Login
         </Button>
       </MobileNav>
     </Navbar>

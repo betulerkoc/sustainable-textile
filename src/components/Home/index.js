@@ -28,7 +28,7 @@ export default function Home() {
             Every second somewhere in the world a truckload of textiles is
             landfilled or incinerated
           </p>
-          <Button className="my-10 bg-black text-base" onClick={() => window.gtag('Home','See Detail')}>Detail</Button>
+          <Button className="my-10 bg-black text-base" onClick={() => window.gtag('event','See Detail')}>Detail</Button>
         </div>
       </div>
       <div className="flex overflow-x-auto no-scrollbar py-10">
