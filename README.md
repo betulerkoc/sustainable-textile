@@ -7,4 +7,5 @@
 
 ## Fast Fashion is out of Fashion
 
+![sustainable-textile](./public/qr.png)
 
