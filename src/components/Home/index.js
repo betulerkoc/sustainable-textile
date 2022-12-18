@@ -4,6 +4,12 @@ import { Button } from "@material-tailwind/react";
 import Form from "../Form"
 
 export default function Home() {
+
+  const redirectToForm = () => {
+    window.gtag('event','redirect_to_form')
+    window.location.href='#form';
+  }
+
   return (
     <>
       <div className="bg-black w-screen h-96 mt-10 flex flex-col items-center justify-evenly">
@@ -29,6 +35,7 @@ export default function Home() {
             Every second somewhere in the world a truckload of textiles is
             landfilled or incinerated
           </p>
+          <Button className="mb-3 bg-black text-base" onClick={() => redirectToForm()}>What do you think?</Button>
         </div>
       </div>
       <div className="flex overflow-x-auto no-scrollbar py-10">

@@ -33,7 +33,7 @@ export default function Form() {
   };
 
   return (
-    <div className="p-10 lg:m-auto lg:w-1/2">
+    <div className="p-10 lg:m-auto lg:w-1/2" id="form">
       {!!status ? (
         <p className="text-center text-4xl my-44">{status}</p>
       ) : (
