@@ -105,6 +105,7 @@ export default function Example() {
       <MobileNav open={openNav}>
         <Button
           size="sm"
+          fullWidth
           onClick={() =>
             window.gtag("event", "login", {
               event_category: "user",
