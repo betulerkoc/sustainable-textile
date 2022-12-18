@@ -1,6 +1,7 @@
 import Cotton from "../../Cotton.png";
 import Cloth from "../../Cloth.png";
 import { Button } from "@material-tailwind/react";
+import Form from "../Form"
 
 export default function Home() {
   return (
@@ -85,8 +86,8 @@ export default function Home() {
           allowFullScreen
         ></iframe>
       </div>
-      <div className="bg-blue-100 h-96 w-screen">
-
+      <div className="bg-blue-50 h-fit">
+        <Form/>
       </div>
 
       {/* <div className="flex flex-wrap justify-around py-10">
