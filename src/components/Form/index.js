@@ -13,16 +13,11 @@ export default function Form() {
       <p className="text-2xl font-bold pb-5">What do you think?</p>
       <form
         target="_blank"
-        action="https://formsubmit.co/bettyss.erk@gmail.com"
+        action={process.env.REACT_APP_EMAIL}
         method="POST"
         className="flex flex-col"
       >
         <input type="hidden" name="_captcha" value="false"></input>
-        <input
-          type="hidden"
-          name="_next"
-          value="https://textile5.netlify.app/thank"
-        ></input>
         <div className="flex flex-col py-2">
           <p>
             I often purchase second-hand goods over the internet or in a shop
