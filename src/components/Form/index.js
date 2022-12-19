@@ -1,10 +1,5 @@
 import React, { useState } from "react";
-import {
-  Input,
-  Radio,
-  Textarea,
-  Button,
-} from "@material-tailwind/react";
+import { Radio, Textarea, Button } from "@material-tailwind/react";
 
 export default function Form() {
   const [formData, setFormData] = useState({});
@@ -15,7 +10,7 @@ export default function Form() {
   };
 
   const handleSubmit = () => {
-    window.gtag("event", "form_submit")
+    window.gtag("event", "form_submit");
     fetch(process.env.REACT_APP_FORM, {
       method: "POST",
       headers: {
@@ -41,6 +36,43 @@ export default function Form() {
           <p className="text-2xl font-bold pb-5">What do you think?</p>
           <form target="_blank" className="flex flex-col">
             <input type="hidden" name="_captcha" value="false"></input>
+            <div className="flex flex-col py-2">
+              <p>
+                I feel responsibility about environmental issues and try to do
+                as much as I can
+              </p>
+              <Radio
+                id="yes"
+                value="yes"
+                name="responsibility"
+                label="YES"
+                onChange={(e) => handleInputChange(e, "yes")}
+              />
+              <Radio
+                id="no"
+                value="no"
+                name="responsibility"
+                label="NO"
+                onChange={(e) => handleInputChange(e, "no")}
+              />
+            </div>
+            <div className="flex flex-col py-2">
+              <p>I think fast fashion impacts our planet and its people</p>
+              <Radio
+                id="yes"
+                value="yes"
+                name="impacts"
+                label="YES"
+                onChange={(e) => handleInputChange(e, "yes")}
+              />
+              <Radio
+                id="no"
+                value="no"
+                name="impacts"
+                label="NO"
+                onChange={(e) => handleInputChange(e, "no")}
+              />
+            </div>
             <div className="flex flex-col py-2">
               <p>
                 I often purchase second-hand goods over the internet or in a
@@ -106,14 +138,6 @@ export default function Form() {
             <Textarea
               label="Any Comments"
               name="comments"
-              className="py-2"
-              onChange={(e) => handleInputChange(e)}
-            />
-            <Input
-              variant="outlined"
-              label="Email"
-              type="email"
-              name="email"
               className="py-2"
               onChange={(e) => handleInputChange(e)}
             />
